@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #333, #555);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: #ffd700 !important;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #444;
+  border-left: 4px solid #333;
+  padding-left: 0.5rem;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+.search {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.search .form-control {
+  border-radius: 5px;
+}
+.search button {
+  background: #333;
+  color: #fff;
+  transition: background 0.3s;
+}
+.search button:hover {
+  background: #555;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}

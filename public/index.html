@@ -1,13 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Tour</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Olá mundo</h1>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="#">Home Tour</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="search mb-5">
+      <h2 class="mb-3">Search Destinations</h2>
+      <form class="row g-2">
+        <div class="col-md-5">
+          <input type="text" id="search" name="search" class="form-control" placeholder="Type a destination">
+        </div>
+        <div class="col-md-3">
+          <input type="date" id="date" name="date" class="form-control">
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-primary w-100">Search</button>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2 class="mb-4">Destinations</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <article class="col">
+          <div class="card h-100">
+            <img src="img/cancun.jpg" class="card-img-top" alt="Beach view of Cancun">
+            <div class="card-body">
+              <h3 class="card-title h5">Cancun</h3>
+              <p class="card-text">Cancun is a city located on the coast of Quintana Roo in Mexico, known for its beaches and resorts.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <img src="img/ibiza.jpg" class="card-img-top" alt="Sunset in Ibiza">
+            <div class="card-body">
+              <h3 class="card-title h5">Ibiza</h3>
+              <p class="card-text">Ibiza is an island in the Balearic Islands, Spain, famous for its nightlife and Mediterranean landscapes.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <img src="img/dubai.jpg" class="card-img-top" alt="Skyline of Dubai">
+            <div class="card-body">
+              <h3 class="card-title h5">Dubai</h3>
+              <p class="card-text">The Emirate of Dubai is located on the Persian Gulf coast, known for its modern architecture and luxury shopping.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <img src="img/maldiva.jpg" class="card-img-top" alt="Resort in Maldives">
+            <div class="card-body">
+              <h3 class="card-title h5">Maldives</h3>
+              <p class="card-text">The Maldives is a small island country in the Indian Ocean, famous for its beaches, lagoons, and reefs.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <img src="img/hawaii.jpg" class="card-img-top" alt="Beach in Hawaii">
+            <div class="card-body">
+              <h3 class="card-title h5">Hawaii</h3>
+              <p class="card-text">Hawaii is a U.S. state in the Pacific Ocean, known for its volcanic islands and tropical landscapes.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="text-center py-3 mt-5">
+    <div class="container">
+    <p class="mb-1"><strong>Contagem</strong></p>
+    <p class="mb-1"><strong>E-mail:</strong> <a href="mailto:lara.rhis@sga.pucminas.br" class="text-white text-decoration-none">lara.rhis@sga.pucminas.br</a></p>
+    <p class="mb-0"><strong>Lara Rossini Rhis</strong></p>
+    <p class="mt-2">&copy; 2025 - Home Tour</p>
+  </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
