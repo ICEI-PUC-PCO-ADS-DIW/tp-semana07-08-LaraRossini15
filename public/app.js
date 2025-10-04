@@ -30,7 +30,7 @@ const destinos = [
     titulo: "Havaí",
     descricao: "O Havaí é um estado dos EUA no Oceano Pacífico, famoso por vulcões e paisagens tropicais.",
     imagem: "img/hawaii.jpg",
-    alt: "Praia no Havaí"
+    alt: "Praia no Havai"
   }
 ];
 
