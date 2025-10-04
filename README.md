@@ -14,32 +14,37 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Lara Rossini Rhis
+- Matricula: 00894845
+- Proposta de projeto escolhida: Site de destinos para viagens
 - Breve descrição sobre seu projeto:
+
+Este projeto consiste em uma página web para apresentar destinos turísticos. Ele possui:
+
+ Página inicial (home) com cards dinâmicos dos destinos.
+ Página de detalhes de cada destino, acessada via botão "Detalhes".
+ Estrutura JSON simulando os dados dos destinos dentro do arquivo `app.js`.
+ Layout responsivo utilizando Bootstrap 5.
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+<img src="public/img/homepage.png" alt="homepage">
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+<img src="public/img/pgDetalhes.png" alt="detalhes">
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
 const dados = [
-  {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
+   {
+    id: 1,
+    titulo: "Cancun",
+    descricao: "Cancun é uma cidade no México, famosa por suas praias e resorts.",
+    imagem: "img/cancun.jpg",
+    alt: "Praia em Cancun",
+    detalhes: "Além das praias paradisíacas, Cancun oferece passeios a sítios arqueológicos maias e vida noturna vibrante."
   }
 ]
 ```
